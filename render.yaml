@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: paws-passions
+    runtime: node
+    plan: free
+    buildCommand: echo ready
+    startCommand: node server.js
+    healthCheckPath: /api/time
